@@ -30,6 +30,9 @@ export default {
             '900': '#7e2c10',
             '950': '#441506',
 },
+        boxShadow: {
+          'md-green': '0 4px 6px -1px rgba(43, 201, 110, 0.5), 0 2px 4px -1px rgba(43, 201, 110, 0.5)',
+        },
       }
     },
   },

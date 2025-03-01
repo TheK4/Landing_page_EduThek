@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className="m-8 flex items-center justify-center gap-4 text-l">
           <a className="text-gray-600 hover:text-emerald-400 transition-colors duration-200 font-semibold" href="#">Home</a>
           <a className="text-gray-600 hover:text-emerald-400 transition-colors duration-200 font-semibold" href="#">Cursos</a>
-          <a className="text-gray-600 hover:text-emerald-400 transition-colors duration-200 font-semibold" href="#">Preços</a>
+          <a className="text-gray-600 hover:text-emerald-400 transition-colors duration-200 font-semibold" href="#">Planos</a>
           <a className="text-gray-600 hover:text-emerald-400 transition-colors duration-200 font-semibold" href="#">Sobre</a>
           <a className="text-gray-600 hover:text-emerald-400 transition-colors duration-200 font-semibold" href="#">Depoimentos</a>
           <a className="text-gray-600 hover:text-emerald-400 transition-colors duration-200 font-semibold" href="#">Contato</a>

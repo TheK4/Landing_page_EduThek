@@ -6,7 +6,7 @@ const Pricing = () => {
             <p className="my-4 text-base max-w-6xl text-gray-600 tracking-wide leading-relaxed text-center py-4">Impulsione a seu aprendizado com os melhores cursos e faça parte da maior comunidade tech.</p>
         </div>
         <div className="flex">
-            <div className="flex flex-col p-6 mx-auto max-w-sm text-center bg-emerald-50 rounded-xl">
+            <div className="flex flex-col justify-between p-6 mx-auto max-w-sm text-center bg-emerald-50 rounded-xl">
                 <h3 className="mb-4 text-2xl font-semibold text-emerald-800">Start</h3>
                 <p className="font-light text-emerald-600 sm:text-lg w-80">Melhor opção para quem está iniciando.</p>
                 <div className="flex justify-center items-baseline my-8">
@@ -31,9 +31,9 @@ const Pricing = () => {
                         <span className="text-emerald-600">Mais de <span className="font-semibold">1400 Aulas</span></span>
                     </li>
                 </ul>
-                <a href="#" className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get started</a>
+                <a href="#" className="text-white bg-emerald-600 hover:bg-emerald-700 focus:ring-4 focus:ring-emerald-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Vamos Começar!</a>
             </div>
-            <div className="flex flex-col p-6 mx-auto max-w-sm text-center bg-emerald-50 border-solid border-emerald-200 border-2 rounded-xl">
+            <div className="flex flex-col justify-between p-6 mx-auto max-w-sm text-center bg-emerald-100 border-solid border-emerald-200 border-2 rounded-xl">
                 <h3 className="mb-4 text-2xl font-semibold text-emerald-800">Pro</h3>
                 <p className="font-light text-emerald-600 sm:text-lg w-80">Melhor opção para multiplos usuários, com suporte premium.</p>
                 <div className="flex justify-center items-baseline my-8">
@@ -62,9 +62,9 @@ const Pricing = () => {
                         <span className="text-emerald-600">Suporte <span className="font-semibold">Premium</span></span>
                     </li>
                 </ul>
-                <a href="#" className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get started</a>
+                <a href="#" className="text-white bg-emerald-600 hover:bg-emerald-700 focus:ring-4 focus:ring-emerald-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Vamos Começar!</a>
             </div>
-            <div className="flex flex-col p-6 mx-auto max-w-sm text-center bg-emerald-50 rounded-xl">
+            <div className="flex flex-col justify-between p-6 mx-auto max-w-sm text-center bg-emerald-50 rounded-xl">
                 <h3 className="mb-4 text-2xl font-semibold text-emerald-800">Premium</h3>
                 <p className="font-light text-emerald-600 sm:text-lg w-80">Acesso a todos os cursos da plataforma e melhor suporte especializado.</p>
                 <div className="flex justify-center items-baseline my-8">
@@ -97,7 +97,7 @@ const Pricing = () => {
                         <span className="text-emerald-600">Suporte <span className="font-semibold">Premium</span></span>
                     </li>
                 </ul>
-                <a href="#" className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get started</a>
+                <a href="#" className="text-white bg-emerald-600 hover:bg-emerald-700 focus:ring-4 focus:ring-emerald-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Vamos Começar!</a>
             </div>
         </div>
     </div>

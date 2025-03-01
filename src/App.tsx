@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar.js";
 import HeroTest from "./components/HeroTest.js";
 import Partner from "./components/Partner.js";
+import CursePage from "./components/CursePage.js";
 
 const App = () => {
   return(
@@ -14,6 +15,7 @@ const App = () => {
         <Navbar />
         <HeroTest />
         <Partner />
+        <CursePage />
       </div>
     </div>
   );

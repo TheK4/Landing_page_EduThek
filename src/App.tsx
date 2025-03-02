@@ -3,6 +3,8 @@ import HeroTest from "./components/HeroTest.js";
 import Partner from "./components/Partner.js";
 import CursePage from "./components/CursePage.js";
 import Pricing from "./components/Pricing.js";
+import About from "./components/About.js";
+import Testimonials from "./components/Testimonials.js";
 
 const App = () => {
   return(
@@ -18,6 +20,8 @@ const App = () => {
         <Partner />
         <CursePage />
         <Pricing />
+        <About />
+        <Testimonials />
       </div>
     </div>
   );

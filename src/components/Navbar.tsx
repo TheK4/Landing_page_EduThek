@@ -5,16 +5,16 @@ const Navbar = () => {
           <a className="text-gray-950 hover:text-emerald-400 transition-colors duration-200 font-extrabold" href="#">EduThek</a>
         </div>
         <div className="m-8 flex items-center justify-center gap-4 text-l">
-          <a className="text-gray-600 hover:text-emerald-400 transition-colors duration-200 font-semibold" href="#">Home</a>
-          <a className="text-gray-600 hover:text-emerald-400 transition-colors duration-200 font-semibold" href="#">Cursos</a>
-          <a className="text-gray-600 hover:text-emerald-400 transition-colors duration-200 font-semibold" href="#">Planos</a>
-          <a className="text-gray-600 hover:text-emerald-400 transition-colors duration-200 font-semibold" href="#">Sobre</a>
-          <a className="text-gray-600 hover:text-emerald-400 transition-colors duration-200 font-semibold" href="#">Depoimentos</a>
-          <a className="text-gray-600 hover:text-emerald-400 transition-colors duration-200 font-semibold" href="#">Contato</a>
+          <a className="text-gray-600 hover:text-emerald-400 transition-colors duration-200 font-medium" href="#">Home</a>
+          <a className="text-gray-600 hover:text-emerald-400 transition-colors duration-200 font-medium" href="#">Cursos</a>
+          <a className="text-gray-600 hover:text-emerald-400 transition-colors duration-200 font-medium" href="#">Planos</a>
+          <a className="text-gray-600 hover:text-emerald-400 transition-colors duration-200 font-medium" href="#">Sobre</a>
+          <a className="text-gray-600 hover:text-emerald-400 transition-colors duration-200 font-medium" href="#">Depoimentos</a>
+          <a className="text-gray-600 hover:text-emerald-400 transition-colors duration-200 font-medium" href="#">Contato</a>
         </div>
         <div className="flex items-center justify-center gap-4 text-l">
-          <button type="button" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Login</button>
-          <button type="button" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Registre-se</button>
+        <button type='button' className="bg-cognac-500 hover:bg-transparent hover:text-cognac-500 border-2 border-cognac-500 transition-all text-white font-semibold text-sm tracking-wide rounded-md px-4 py-2">Login</button>
+        <button type='button' className="bg-transparent hover:bg-cognac-500 hover:text-white border-2 border-cognac-500 transition-all text-cognac-500 font-semibold text-sm tracking-wide rounded-md px-4 py-2">Registre-se</button>
         </div>
     </nav>
   )

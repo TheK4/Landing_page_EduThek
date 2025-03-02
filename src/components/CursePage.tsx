@@ -1,6 +1,6 @@
 const CursePage = () => {
   return (
-    <div className="border-b pb-20 mb-28">
+    <div className="border-b pb-20 mb-20">
         <div className="flex flex-col justify-center items-center">
             <h2 className="tracking-tight text-gray-950 text-4xl lg:text-5xl font-extrabold md:!leading-[55px]">Cursos</h2>
             <p className="my-4 text-base max-w-6xl text-gray-600 tracking-wide leading-relaxed text-center py-4">Acreditamos que a tecnologia é a chave para o futuro. Por isso, nossos cursos são voltados para crianças e adolescentes, proporcionando aprendizado prático e preparando-os para o mercado de trabalho com habilidades reais. Nossos cursos combinam teoria e prática, com projetos reais e uma abordagem interativa, garantindo que os alunos saiam preparados para os desafios do mundo digital.</p>

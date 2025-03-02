@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className="flex flex-col justify-center items-center pb-20 mb-20">
+    <div className="flex flex-col justify-center items-center pb-20 mb-16">
         <h2 className="tracking-tight text-gray-950 text-4xl lg:text-5xl font-extrabold md:!leading-[55px] mb-8">Sobre</h2>
         <h3 className="tracking-tighter text-gray-500 text-2xl lg:text-3xl md:!leading-[55px]">Porque o <span className="font-semibold text-cognac-500 hover:text-cognac-600 transition delay-100 duration-300 ease-in-out">Eduthek</span> é para você?</h3>
         <p className="mb-12 text-base max-w-6xl text-gray-600 tracking-wide leading-relaxed text-center py-2">Conheca a escola de tecnologia mais completa da atualidade.</p>

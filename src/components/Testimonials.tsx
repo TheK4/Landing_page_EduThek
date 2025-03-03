@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa";
 
 const Testimonials = () => {
   return (
-    <div className="flex flex-col justify-center items-center py-6 my-6">
+    <div className="flex flex-col justify-center items-center py-6 pb-24 my-6 border-b">
         <h2 className="tracking-tight text-gray-950 text-3xl font-extrabold md:!leading-[25px]">Depoimentos</h2>
         <p className="my-4 max-w-6xl text-gray-600 tracking-wide leading-relaxed text-center py-4 text-lg">Veja o que nossos usuários estão dizendo.</p>
         <div className="flex flex-row gap-8">

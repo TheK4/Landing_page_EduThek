@@ -5,6 +5,7 @@ import CursePage from "./components/CursePage.js";
 import Pricing from "./components/Pricing.js";
 import About from "./components/About.js";
 import Testimonials from "./components/Testimonials.js";
+import Contact from "./components/Contact.js";
 
 const App = () => {
   return(
@@ -22,6 +23,7 @@ const App = () => {
         <Pricing />
         <About />
         <Testimonials />
+        <Contact />
       </div>
     </div>
   );

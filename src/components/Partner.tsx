@@ -1,23 +1,31 @@
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
+
 const Partner = () => {
+
+    const containerRef = useRef<HTMLDivElement>(null);
+
+    const { scrollYProgress } = useScroll({
+        target: containerRef,
+        offset: ["start end", "end start"], // Começa quando entra na tela, termina quando sai
+      });
+
+    const x = useTransform(scrollYProgress, [0, 1], ["20%", "-20%"]);
+
   return (
-    <div>
-        <div className="my-24 flex items-center justify-between py-14 border-b">
-            <div className="text-3xl m-8 flex items-center justify-center gap-4 text-l">
-                <a className="text-gray-500 hover:text-emerald-400 font-bold tracking-tight transition-colors duration-200" href="#">Alura</a>
-            </div>
-            <div className="text-3xl m-8 flex items-center justify-center gap-4 text-l">
-                <a className="text-gray-500 hover:text-emerald-400 font-bold tracking-tight transition-colors duration-200" href="#">Origamid</a>
-            </div>
-            <div className="text-3xl m-8 flex items-center justify-center gap-4 text-l">
-                <a className="text-gray-500 hover:text-emerald-400 font-bold tracking-tight transition-colors duration-200" href="#">Duolingo</a>
-            </div>
-            <div className="text-3xl m-8 flex items-center justify-center gap-4 text-l">
-                <a className="text-gray-500 hover:text-emerald-400 font-bold tracking-tight transition-colors duration-200" href="#">Udemy</a>
-            </div>
-            <div className="text-3xl m-8 flex items-center justify-center gap-4 text-l">
-                <a className="text-gray-500 hover:text-emerald-400 font-bold tracking-tight transition-colors duration-200" href="#">DankiCode</a>
-            </div>
-        </div>
+    <div ref={containerRef} className="relative my-24 py-14 border-b overflow-hidden">
+      <motion.div 
+        style={{ x }} 
+        className="flex items-center justify-between whitespace-nowrap"
+      >
+        {["Alura", "Origamid", "Duolingo", "Udemy", "DankiCode"].map((partner, index) => (
+          <div key={index} className="text-3xl m-8 flex items-center justify-center gap-4 text-l">
+            <a className="text-gray-500 hover:text-emerald-400 font-bold tracking-tight transition-colors duration-200" href="#">
+              {partner}
+            </a>
+          </div>
+        ))}
+      </motion.div>
     </div>
 )
 }

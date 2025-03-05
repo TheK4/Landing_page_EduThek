@@ -6,6 +6,7 @@ import Pricing from "./components/Pricing.js";
 import About from "./components/About.js";
 import Testimonials from "./components/Testimonials.js";
 import Contact from "./components/Contact.js";
+import BackTop from "./components/backTop.js";
 
 const App = () => {
   return(
@@ -15,7 +16,7 @@ const App = () => {
         <div className="absolute inset-0 -z-10 size-full bg-neutral-950">
           <div className="absolute top-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(100%_50%_at_50%_0%,rgba(43,201,110,0.13)_0,rgba(43,201,110,0)_50%,rgba(43,201,110,0)_100%)]"></div>        </div>
       </div>
-      <div className=" container mx-auto px-20 ">
+      <div className=" container mx-auto px-20 scroll-smooth">
         <Navbar />
         <HeroTest />
         <Partner />
@@ -24,6 +25,7 @@ const App = () => {
         <About />
         <Testimonials />
         <Contact />
+        <BackTop />
       </div>
     </div>
   );

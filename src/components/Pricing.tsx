@@ -1,12 +1,16 @@
+import { motion } from "framer-motion";
+
+const easing = [0.25, 0.1, 0.25, 1];
+
 const Pricing = () => {
   return (
-    <div className="border-b pb-20 mb-32">
+    <div id="planos" className="border-b pb-20 mb-32">
         <div className="flex flex-col justify-center items-center py-6 my-6">
-            <h2 className="tracking-tight text-gray-950 text-4xl lg:text-5xl font-extrabold md:!leading-[55px]">Planos</h2>
-            <p className="my-4 text-base max-w-6xl text-gray-600 tracking-wide leading-relaxed text-center py-4">Impulsione a seu aprendizado com os melhores cursos e faça parte da maior comunidade tech.</p>
+            <motion.h2 whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -100 }} transition={{ duration: 1.5, ease: easing }} className="tracking-tight text-gray-950 text-4xl lg:text-5xl font-extrabold md:!leading-[55px]">Planos</motion.h2>
+            <motion.p whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: 100 }} transition={{ duration: 1.5, ease: easing }} className="my-4 text-base max-w-6xl text-gray-600 tracking-wide leading-relaxed text-center py-4">Impulsione a seu aprendizado com os melhores cursos e faça parte da maior comunidade tech.</motion.p>
         </div>
         <div className="flex">
-            <div className="flex flex-col justify-between p-6 mx-auto max-w-sm text-center bg-emerald-50 rounded-xl">
+            <motion.div whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 100 }} transition={{ duration: 1.5, ease: easing }} className="flex flex-col justify-between p-6 mx-auto max-w-sm text-center bg-emerald-50 rounded-xl">
                 <h3 className="mb-4 text-2xl font-semibold text-emerald-800">Start</h3>
                 <p className="font-light text-emerald-600 sm:text-lg w-80">Melhor opção para quem está iniciando.</p>
                 <div className="flex justify-center items-baseline my-8">
@@ -32,8 +36,8 @@ const Pricing = () => {
                     </li>
                 </ul>
                 <a href="#" className="text-white bg-emerald-600 hover:bg-emerald-700 focus:ring-4 focus:ring-emerald-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Vamos Começar!</a>
-            </div>
-            <div className="flex flex-col justify-between p-6 mx-auto max-w-sm text-center bg-emerald-100 border-solid border-emerald-200 border-2 rounded-xl">
+            </motion.div>
+            <motion.div whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 100 }} transition={{ duration: 2.5, ease: easing }} className="flex flex-col justify-between p-6 mx-auto max-w-sm text-center bg-emerald-100 border-solid border-emerald-200 border-2 rounded-xl">
                 <h3 className="mb-4 text-2xl font-semibold text-emerald-800">Pro</h3>
                 <p className="font-light text-emerald-600 sm:text-lg w-80">Melhor opção para multiplos usuários, com suporte premium.</p>
                 <div className="flex justify-center items-baseline my-8">
@@ -63,8 +67,8 @@ const Pricing = () => {
                     </li>
                 </ul>
                 <a href="#" className="text-white bg-emerald-600 hover:bg-emerald-700 focus:ring-4 focus:ring-emerald-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Vamos Começar!</a>
-            </div>
-            <div className="flex flex-col justify-between p-6 mx-auto max-w-sm text-center bg-emerald-50 rounded-xl">
+            </motion.div>
+            <motion.div whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 100 }} transition={{ duration: 3.5, ease: easing }} className="flex flex-col justify-between p-6 mx-auto max-w-sm text-center bg-emerald-50 rounded-xl">
                 <h3 className="mb-4 text-2xl font-semibold text-emerald-800">Premium</h3>
                 <p className="font-light text-emerald-600 sm:text-lg w-80">Acesso a todos os cursos da plataforma e melhor suporte especializado.</p>
                 <div className="flex justify-center items-baseline my-8">
@@ -98,7 +102,7 @@ const Pricing = () => {
                     </li>
                 </ul>
                 <a href="#" className="text-white bg-emerald-600 hover:bg-emerald-700 focus:ring-4 focus:ring-emerald-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Vamos Começar!</a>
-            </div>
+            </motion.div>
         </div>
     </div>
   )

@@ -10,6 +10,15 @@ const containerMotion = (delay: number) => ({
   }
 })
 
+const containerMotioninv = (delay: number) => ({
+  hidden: { x: 100, opacity:0 },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: { duration: 0.5, delay: delay },
+  }
+})
+
 const HeroTest = () => {
   return (
     <div id="home" className="pb-4 lg:mb-35">
@@ -36,9 +45,9 @@ const HeroTest = () => {
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:px-10">
-            <div className="flex justify-center">
+            <motion.div variants={containerMotioninv(0.5)} initial="hidden" animate="visible" className="flex justify-center">
                 <img src={heroImg} className="w-full h-full object-contain rounded-3xl" alt="hero-girl-image" />
-            </div>
+            </motion.div>
         </div>
       </div>
     </div>

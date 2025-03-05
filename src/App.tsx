@@ -6,7 +6,7 @@ import Pricing from "./components/Pricing.js";
 import About from "./components/About.js";
 import Testimonials from "./components/Testimonials.js";
 import Contact from "./components/Contact.js";
-import BackTop from "./components/backTop.js";
+import BackTop from "./components/BackTop";
 
 const App = () => {
   return(
